@@ -33,9 +33,7 @@ const IntroSection = () => {
           </div>
         </div>
       </div>
-      <div className="section evenSection" id="list">
-        List
-      </div>
+      <div className="section evenSection" id="list"></div>
       <div className="section oddSection" id="categories">
         Categories
       </div>
