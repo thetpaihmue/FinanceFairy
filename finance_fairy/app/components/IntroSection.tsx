@@ -2,6 +2,8 @@ import React from "react";
 import "@/app/styles/introSection.css";
 import fairy from "@/app/images/fairy.png";
 import "../../../finance_fairy/node_modules/animate.css/animate.min.css";
+import AddRecord from "./AddRecord";
+import Image from "next/image";
 
 const IntroSection = () => {
   return (
@@ -25,17 +27,21 @@ const IntroSection = () => {
             </div>
           </div>
           <div className="col-span-5">
-            <img
+            <Image
               src={fairy.src}
               alt="fairy"
+              width={200}
+              height={200}
               className="animate__animated animate__pulse animate__infinite infinite w-4/5 p-10"
             />
           </div>
         </div>
       </div>
-      <div className="section evenSection" id="list"></div>
+      <div className="section evenSection" id="list">
+        <AddRecord />
+      </div>
       <div className="section oddSection" id="categories">
-        Categories
+        Categories haha
       </div>
     </>
   );

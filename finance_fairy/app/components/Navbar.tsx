@@ -2,7 +2,7 @@ import React from "react";
 import logo from "@/app/images/fairy.png";
 import "@/app/styles/navbar.css";
 import LinkText from "./LinkText";
-
+import Image from "next/image";
 const Navbar = () => {
   return (
     <>
@@ -11,7 +11,13 @@ const Navbar = () => {
           <span className="font-semibold text-xl tracking-tight ml-5 font-mono">
             Finance Fairy
           </span>
-          <img className="h-10 w-10 ml-5" src={logo.src}></img>
+          <Image
+            className="h-10 w-10 ml-5"
+            width={200}
+            height={200}
+            src={logo.src}
+            alt="logo"
+          />
         </div>
 
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
